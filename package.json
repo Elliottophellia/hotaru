@@ -1,0 +1,21 @@
+{
+  "name": "hotaru",
+  "version": "1.0.0",
+  "description": "Genshin daily login reminder Discord Bot",
+  "main": "hotaru.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Eilaluth",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eilaluth/Hotaru/new/main"
+  }
+}
