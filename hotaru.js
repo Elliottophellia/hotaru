@@ -10,8 +10,8 @@ client.once("ready", () => {
     let scheduledMessage = new cron.CronJob('30 21 * * *', () => {
         // This runs every day at 04:30 AM GMT+7 - 05:30 PM GMT+4, you can do anything you want
         // Specifing your guild (server) and your channel
-        const guild = client.guilds.cache.get('813007247914303498'); // your guild id
-        const channel = guild.channels.cache.get('826209599211307029'); // your guild channel id
+        const guild = client.guilds.cache.get(config.guild); // your guild id
+        const channel = guild.channels.cache.get(config.channel); // your guild channel id
         const DailyLogin = new MessageEmbed()
         .setColor(config.color)
         .addField(`Good Morning!`, `Good morning and don't forget to daily check-in guys!!!\r\n\r\nLink: [English](https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481&lang=en-us) - [Indonesia](https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481&lang=id-ID)\r\nyou can also claim it from hoyolab app\r\n\r\nTag: <@&875670582421770270>`)
