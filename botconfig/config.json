@@ -1,4 +1,6 @@
 {
     "token": "",
-    "color": "#fcf8d5"
+    "color": "#fcf8d5",
+    "guild": "SERVER_DISCORD_ID",
+    "channel": "SERVER_DISCORD_CHANNEL_ID"
 }
