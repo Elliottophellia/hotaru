@@ -7,8 +7,8 @@ const client = new Client({disableMentions: 'everyone'});
 client.once("ready", () => {
     console.log(`Online as ${client.user.tag}`);
 
-    let scheduledMessage = new cron.CronJob('30 0-23/21 * * *', () => {
-        // This runs every day at 04:30 AM GMT+7 - 05:30 PM GMT+4, you can do anything you want
+    let scheduledMessage = new cron.CronJob('30 22 * * *', () => {
+        // This runs every day at 05:30 AM GMT+7 - 06:30 PM GMT+4, you can do anything you want
         // Specifing your guild (server) and your channel
         const guild = client.guilds.cache.get(config.guild); // your guild id
         const channel = guild.channels.cache.get(config.channel); // your guild channel id
