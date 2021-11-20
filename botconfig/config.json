@@ -2,5 +2,6 @@
     "token": "",
     "color": "#fcf8d5",
     "guild": "SERVER_DISCORD_ID",
-    "channel": "SERVER_DISCORD_CHANNEL_ID"
+    "channel": "SERVER_DISCORD_CHANNEL_ID",
+    "roleid": "ROLE_TO_TAG_ID"
 }
