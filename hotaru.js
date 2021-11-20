@@ -14,7 +14,7 @@ client.once("ready", () => {
         const channel = guild.channels.cache.get(config.channel); // your guild channel id
         const DailyLogin = new MessageEmbed()
         .setColor(config.color)
-        .addField(`Good Morning!`, `Good morning and don't forget to daily check-in guys!!!\r\n\r\nLink: [English](https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481&lang=en-us) - [Indonesia](https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481&lang=id-ID)\r\nyou can also claim it from hoyolab app\r\n\r\nTag: <@&875670582421770270>`)
+        .addField(`Good Morning!`, `Good morning and don't forget to daily check-in guys!!!\r\n\r\nLink: [English](https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481&lang=en-us) - [Indonesia](https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481&lang=id-ID)\r\nyou can also claim it from hoyolab app\r\n\r\nTag: <@&${config.roleid}>`)
         .setImage('https://i.ibb.co/vcPgPgC/Lumine-Login-Reminder.png')
         channel.send(DailyLogin);
     });
